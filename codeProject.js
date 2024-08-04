@@ -14,17 +14,15 @@ function createGrid(numOfSquares) {
         div.style.width = `calc(100% / ${numOfSquares})`;
         div.style.paddingBottom = `calc(100% / ${numOfSquares})`;
         div.style.boxSizing = "border-box";
-        //for (let j = 0.0; j < 1; j + 0.1) {
-        //let darkSquare = 0.1;
-        //let opacity = 0;
+
         div.addEventListener("mouseover", () => {
             const randomR = randomNumber(255);
             const randomG = randomNumber(255);
             const randomB = randomNumber(255);
             div.style.backgroundColor = `rgb(${randomR} ${randomG} ${randomB} )`;
-            //div.style.opacity = `${opacity} + ${darkSquare}`;
+
         })
-        //}
+
 
     }
 }
